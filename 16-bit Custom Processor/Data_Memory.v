@@ -1,5 +1,5 @@
 module DM(wflag,ALU_res,datain,dataout);
-  input wflag; //flag to read or write
+  input wflag; //write flag
   input [15:0] ALU_res; //final address after adition
   input [15:0] datain; //data to be write on address
   output reg [15:0] dataout; //data to be read from address and sent out
