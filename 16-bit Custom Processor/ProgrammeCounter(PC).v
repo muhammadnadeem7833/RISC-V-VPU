@@ -1,5 +1,5 @@
 module PC(out,clk,rstn);
-  output [3:0] out;//By-default wire
+  output [7:0] out;//By-default wire
   reg [7:0] out;
   input rstn, clk;
 
