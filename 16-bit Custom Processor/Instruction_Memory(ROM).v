@@ -28,6 +28,6 @@ module IM_ROM(instr_addr, instr);
     //ROM[14] = 16'b000_010_001_000_1110; //please add conditional instrs as per your code
   end
 
-  assign instr = ROM[instr_addr];
+  assign instr = ROM[instr_addr]; //fetching instruction from address
 
 endmodule
