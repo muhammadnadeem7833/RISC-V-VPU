@@ -1,13 +1,18 @@
-module IR(in_inst, clk, rstn, out_inst);
-  input [15:0] in_inst; //instruction from ROM
+module IR(in_instr, clk, rstn, out_instr);
+  input [15:0] in_instr; //instruction from ROM
   input clk, rstn;
-  output reg [15:0] out_inst; //output register
+  
+  output [15:0] out_instr; //output wire of 16-bit instruction
+  reg [15:0] instr_reg;
 
-  always @(posedge clk or negedge rstn) //run on positive edge only
+  always @(posedge clk or negedge rstn) //run on positive edge of every clock cycle
   begin
-    if (!rstn)
-        out_inst <= 0;
+    if(!rstn)        //if reset == 0, reset registr value
+      instr_reg <= 0;
     else
-      out_inst <= in_inst; //value assigning(non-blocking statement)
+      instr_reg <= in_instr; //making memory
   end
+
+  assign out_instr = instr_reg; //output instruction wire
+
 endmodule
