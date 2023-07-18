@@ -1,9 +1,10 @@
-module main(pc_out,pc_in);
-  //input clk;
+module main(clk, rstn);
+  input clk, rstn;
   input [7:0] pc_out;
   output [7:0] pc_in;
 
   assign pc_in=pc_out+1;
 
-  PC(pc_in,pc_out,1,1);
+  PC obj_pc (pc_in, pc_out, clk, rstn);
+  
 endmodule
