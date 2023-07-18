@@ -23,10 +23,6 @@ module IM_ROM(pc,instr);
     //ROM[14] = 16'b000_010_001_000_1110; //please add conditional instrs as per your code
   end
 
-  //an easier approach to picking instruction from ROM is as follows:
-  //assing inst = ROM[pc];
-  //This avoids the MUX, here PC acts as the address line of the ROM
-  
   always @(*) //MUX with 'pc' as select line of 8-bit
   begin  //for initial 13 locations only
     case(pc)
