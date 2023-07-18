@@ -19,7 +19,7 @@ module RF(RegWrite_Flag,Rreg1,Rreg2,Wreg,Datain,Dout1,Dout2);
         RegMem[i] <= 0;
     else
       if(RegWrite_Flag)
-        RegMem[Wreg] = Datain;
+        RegMem[Wreg] <= Datain;
   end
 
 endmodule
