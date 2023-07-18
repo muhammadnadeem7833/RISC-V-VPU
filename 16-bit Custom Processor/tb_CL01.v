@@ -14,9 +14,13 @@ module tb_CL01();
 
   initial
   begin
-    rstn = 0;
-    #10
-    rstn = 1;
+    clk = 0; rstn = 0;
+    #5
+    clk = 1; rstn = 0;
+    #5
+    clk = 0; rstn = 1;
+    #5
+    clk = 1; rstn = 1;
   end
 
 endmodule
