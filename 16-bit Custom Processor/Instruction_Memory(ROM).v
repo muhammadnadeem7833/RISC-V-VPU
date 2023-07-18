@@ -1,8 +1,11 @@
-module IM_ROM(pc,instr);
+module IM_ROM(instr_addr, instr);
 
-  output reg [15:0] instr;
-  input [7:0] pc;  //program counter value from PC module
-  reg [15:0] ROM[0:12];  //memry array
+  output [15:0] instr; //16-bit instr. to be fetched from this module
+  input [7:0] instr_addr;  //address of instruction from PC module
+
+  reg [15:0] ROM[0:255];  //memry array
+
+  integer i;
 
   initial  //to store the instructions in memory(ROM)
   begin
@@ -18,28 +21,13 @@ module IM_ROM(pc,instr);
     ROM[9] = 16'b000_000_000_011_1001; //b
     ROM[10] = 16'b000_011_001_000_1010; //mul	
     ROM[11] = 16'b000_011_001_000_1011; //mflo	
-    ROM[12] = 16'b000_000_000_011_1100; //mfhi	
+    ROM[12] = 16'b000_000_000_011_1100; //mfhi
+    for(i=13; i<256; i=i+1)
+      ROM[i]=0;	
     //ROM[13] = 16'b000_010_001_000_1101; //please add conditional instrs as per your code
     //ROM[14] = 16'b000_010_001_000_1110; //please add conditional instrs as per your code
   end
 
-  always @(*) //MUX with 'pc' as select line of 8-bit
-  begin  //for initial 13 locations only
-    case(pc)
-      8'd0: instr=ROM[0];
-      8'd1: instr=ROM[1];
-      8'd2: instr=ROM[2];
-      8'd3: instr=ROM[3];
-      8'd4: instr=ROM[4];
-      8'd5: instr=ROM[5];
-      8'd6: instr=ROM[6];
-      8'd7: instr=ROM[7];
-      8'd8: instr=ROM[8];
-      8'd9: instr=ROM[9];
-      8'd10: instr=ROM[10];
-      8'd11: instr=ROM[11];
-      8'd12: instr=ROM[12];
-    endcase
-  end
+  assign instr = ROM[instr_addr];
 
 endmodule
