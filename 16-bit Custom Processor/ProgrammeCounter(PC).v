@@ -1,7 +1,7 @@
-module PC(in,out,clk,rstn);
+module PC(in, clk, rstn, out);
   input [7:0] in;
-  output reg [7:0] out;
   input rstn, clk;
+  output reg [7:0] out;
 
   always@(posedge clk or negedge rstn)//rstn is used here as active low
   begin
