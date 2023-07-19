@@ -1,9 +1,10 @@
-module Decode(instr, PC_select, source2_select, ALU_out_select, jump_addr, immediate_addr, Rreg_sig1, Rreg_sig2, Wreg_sig, opcode);
+module Decode(instr, PC_select, source2_select, ALU_out_select, RegWrite_Flag, jump_addr, immediate_addr, Rreg_sig1, Rreg_sig2, Wreg_sig, opcode);
   input [15:0] instr; //from instruction register(IR)
 
   output PC_select; //control line to decide PC's next value
   output source2_select; //control line to decide 2nd input for ALU
   output ALU_out_select; //control line to decide value for write-register
+  output RegWrite_Flag; //for Reg.File to decide whether write on destination register
   output [7:0] jump_addr; //8-bit address for PC in case of jump
   output [5:0] immediate_addr; //6-bit address for ALU input for I-type instr.
   output [2:0] Rreg_sig1; //for source-1 register
@@ -11,7 +12,7 @@ module Decode(instr, PC_select, source2_select, ALU_out_select, jump_addr, immed
   output [2:0] Wreg_sig; //for destination register
   output [3:0] opcode; //for ALU-con module
 
-  reg PC_select, source2_select, ALU_out_select;
+  reg PC_select, source2_select, ALU_out_select, RegWrite_Flag;
   reg [7:0] jump_addr;
   reg [5:0] immediate_addr;
  
@@ -48,6 +49,17 @@ module Decode(instr, PC_select, source2_select, ALU_out_select, jump_addr, immed
     end
     else
       ALU_out_select = 0;
+  end
+
+//block to set RegWrite_Flag control line
+ always @(*)
+  begin 
+    if(instr[3:0] == 4'b1000) //if sw instruction, RegWrite_Flag == 0, otherwise 1
+    begin
+      RegWrite_Flag = 0;
+    end
+    else
+      RegWrite_Flag = 1;
   end
 
   assign Rreg_sig1 = instr[9:7]; //3-bits for source-1 register
