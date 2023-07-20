@@ -26,7 +26,7 @@ module Control_logic_01(clk, rstn, instr_addr, Instruction, PC_select, Source2_s
   wire [5:0] immediate_addr;
   wire [2:0] Rreg_sig1, Rreg_sig2, Wreg_sig;
   wire [3:0] opcode;
-  Decode obj_Dec(instruction1, pc_select, source2_select, ALU_out_select, regwrite_flag, jump_addr, immediate_addr, Rreg_sig1, Rreg_sig2, Wreg_sig, opcode);
+  Decode obj_Dec(instruction, pc_select, source2_select, ALU_out_select, regwrite_flag, jump_addr, immediate_addr, Rreg_sig1, Rreg_sig2, Wreg_sig, opcode);
 //assigning output 
   assign instr_addr = inst_address;
   assign Instruction = instruction;
