@@ -1,7 +1,8 @@
-module Control_logic_01(clk, rstn, instr_addr, PC_select, Source2_select, ALU_out_Select, RegWrite_Flag, Jump_addr, Immediate_Addr, Rreg_Sig1, Rreg_Sig2, Wreg_Sig, OPCODE);
+module Control_logic_01(clk, rstn, instr_addr, Instruction, PC_select, Source2_select, ALU_out_Select, RegWrite_Flag, Jump_addr, Immediate_Addr, Rreg_Sig1, Rreg_Sig2, Wreg_Sig, OPCODE);
   input clk, rstn; //inputs
  //outputs of module
   output [7:0] instr_addr;
+  output [15:0] Instruction;
   output PC_select, Source2_select, ALU_out_Select, RegWrite_Flag;
   output [7:0] Jump_addr;
   output [5:0] Immediate_Addr;
@@ -28,6 +29,7 @@ module Control_logic_01(clk, rstn, instr_addr, PC_select, Source2_select, ALU_ou
   Decode obj_Dec(instruction1, pc_select, source2_select, ALU_out_select, regwrite_flag, jump_addr, immediate_addr, Rreg_sig1, Rreg_sig2, Wreg_sig, opcode);
 //assigning output 
   assign instr_addr = inst_address;
+  assign Instruction = instruction;
   assign PC_select = pc_select;
   assign Source2_select = source2_select;
   assign ALU_out_Select = ALU_out_select;
