@@ -3,19 +3,20 @@ module ALU(in1, in2, con_sig, out);
   input [15:0] in1;
   input [15:0] in2;
 
-  input [1:0] con_sig; //operation selection bits
-  output [15:0] out; //result
+  input [2:0] con_sig; //operation selection bits
+  output [31:0] out; //result
 
-  reg [15:0] out;
-  
+  reg [31:0] out;
 
   always @(*)
   begin
     case(con_sig)
-    2'b00: out = in1 + in2; //addition
-    //2'b01: out = in1 * in2; //subtraction
-    2'b10: out = in1 & in2; //and
-    2'b11: out = in1 | in2; //or
+    2'b000: out = in1 + in2; //addition
+    2'b001: out = in1 * in2; //multiplication
+    2'b010: out = in1 & in2; //and
+    2'b011: out = in1 | in2; //or
+    2'b100: out = in1 << in2; //sll
+    2'b101: out = in1 >> in2; //slr
     endcase
   end
 
