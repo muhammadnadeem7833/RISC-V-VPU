@@ -11,7 +11,6 @@ module DM(wflag, ALU_res, datain, clk, rstn, dataout);
   reg [15:0] dataout;
   integer i;
  
- 
   always @(posedge clk or negedge rstn)
   begin
     if(!rstn)
@@ -19,13 +18,17 @@ module DM(wflag, ALU_res, datain, clk, rstn, dataout);
       for(i = 0; i < 65536; i = i + 1)
         Data_Mem[i] <= 0;
     else
-//to read/write data from/to memory
+//write data from/to memory
       begin
         if(wflag)
           Data_Mem[ALU_res] <= datain; //write data
-        else
-          dataout <= Data_Mem[ALU_res]; //raed data
       end
+  end
+  
+  always @(*)
+  begin
+    if(wflag == 0)
+    dataout = Data_Mem[ALU_res]; //raed data
   end
 
 endmodule
