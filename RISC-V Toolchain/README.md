@@ -98,7 +98,7 @@ Step-by-Step guide:
     make -j3
     ```
     
-    **NOTE: `C` extension of RISC-V architecture in `--with-arch=rv32/64 imafdqcv_zifencei_zicsr` is for compressed instructions support, you can remove if you don’t want compressed instructions.And in the command `make -j3`, `3` represents the utilization of the number of `CPU cores` while installing, you can increase this accordingly.**
+    **NOTE: `C` extension of RISC-V architecture in `--with-arch=rv32/64 imafdqcv_zifencei_zicsr` is for compressed instructions support, you can remove if you don’t want compressed instructions. And in the command `make -j3`, `3` represents the utilization of the number of `CPU cores` while installing, you can increase this accordingly.**
 
 + **Installation of `spike`:**
   
