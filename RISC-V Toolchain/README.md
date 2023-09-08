@@ -40,9 +40,6 @@ Step-by-Step guide:
        export PATH=$PK_PATH_64/bin:$PATH
        export pk=$RISCV_TOOLCHAIN/bin/pk32/riscv32-unknown-elf/bin/pk 
        ```
-       	**Like this:**
-    
-       ![image](https://github.com/muhammadnadeem7833/RISC-V-VPU/assets/124807084/05fd2908-9060-4cb6-a6bf-5c34bd2c4bad)
 
   - **Press `Ctrl+S` to save. Then press `Ctrl+X` to exit.**
     
