@@ -61,10 +61,7 @@ Step-by-Step guide:
 + **For `Ubuntu` dependencies, run the following commands:**
   
   ``` shell
-  sudo apt-get install autoconf automake autotools-dev curl python3 libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev
-  ```
-  ``` shell
-  sudo apt-get -y install python3-pip
+  sudo apt-get -y install autoconf automake autotools-dev curl python3 libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev python3-pip
 
 + **Inside the `riscv-gnu-toolchain` directory, make a directory `build` and open it:**
   
