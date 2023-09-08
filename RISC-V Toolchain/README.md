@@ -57,8 +57,8 @@ Step-by-Step guide:
 + **Clone the official `RISC-V` GitHub repository, this will make the directory `riscv-gnu-toolchain` inside the `tools` directory:**
   
   ``` shell
-  git clone  https://github.com/riscv/riscv-gnu-toolchain
-
+  git clone --recursive  https://github.com/riscv/riscv-gnu-toolchain
+Note: You can remove `--recursive` if you have stable internet connection
 
 
 + **For `Ubuntu` dependencies, run the following commands:**
