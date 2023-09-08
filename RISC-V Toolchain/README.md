@@ -3,9 +3,10 @@ RISC-V Cross-Compilation Toolchain Setup
 
 Pre-requisites:
 ---------------
-* Any version of `UBUNTU` (preferably the latest)
-* `WSL` from Microsoft Store
-* `Terminal` from Microsoft Store (optional)
+
+* Download `WSL` from Microsoft Store or `Vitual Machine`.
+* Install any version of `UBUNTU` on `WSL` or `VM`. (preferably the latest)
+* Download `Terminal` from Microsoft Store. (optional)
 
 Step-by-Step guide:
 -------------------
