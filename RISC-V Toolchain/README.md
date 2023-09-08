@@ -12,7 +12,8 @@ Step-by-Step guide:
 	Open the terminal and start following the given steps.
 + #### Set your environment variables or Paths:
   - **Open the `.bashrc` file:**
-    * `nano ~/.bashrc`
+    * ```shell
+      nano ~/.bashrc
   - **Paste the following commands to the `.bashrc` file:**
        ``` shell
        export RISCV_PATH="$HOME/proj/binaries/riscv-toolchain"
@@ -41,3 +42,10 @@ Step-by-Step guide:
        export pk=$RISCV_TOOLCHAIN/bin/pk32/riscv32-unknown-elf/bin/pk 
        ```
        	**Like this:**
+       ![image](https://github.com/muhammadnadeem7833/RISC-V-VPU/assets/124807084/05fd2908-9060-4cb6-a6bf-5c34bd2c4bad)
+
+  - **Press `Ctrl+S` to save. Then press `Ctrl+X` to exit.**
+  - **To apply the changes in the `.bashrc` file we made, run the following command on the terminal:**
+    ``` shell
+    source ~/.bashrc
+
