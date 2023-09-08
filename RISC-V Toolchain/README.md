@@ -105,7 +105,7 @@ Step-by-Step guide:
   - **Move to the `tools` directory and clone the link below which will make a directory `spike-riscv` inside the `tools` directory:**
     
     ``` shell
-    git clone https://github.com/riscv-software-src/riscv-isa-sim.git spike-riscv
+    git clone --recursive https://github.com/riscv-software-src/riscv-isa-sim.git spike-riscv
   - **This step will build the necessary dependencies:**
     
     ``` shell
