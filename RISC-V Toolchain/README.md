@@ -21,10 +21,6 @@ Step-by-Step guide:
        ``` shell
        export RISCV_PATH="$HOME/proj/binaries/riscv-toolchain"
        export RISCV_TOOLCHAIN=$RISCV_PATH
-       export RISCV_GCC="$RISCV_TOOLCHAIN/bin/riscv64-unknown-elf-gcc"
-       export RISCV_OBJCOPY="$RISCV_TOOLCHAIN/bin/riscv64-unknown-elf-objcopy"
-       export RISCV_LD="$RISCV_TOOLCHAIN/bin/riscv64-unknown-elf-ld"
-       export RISCV_OBJDUMP="$RISCV_TOOLCHAIN/bin/riscv64-unknown-elf-objdump"
        export SPIKE_PATH=$RISCV_TOOLCHAIN/bin
        export SPIKE_PATH_32=$RISCV_TOOLCHAIN/bin/spike32
        export SPIKE_PATH_64=$RISCV_TOOLCHAIN/bin/spike64
