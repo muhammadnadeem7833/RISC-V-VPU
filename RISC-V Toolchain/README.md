@@ -16,7 +16,7 @@ Step-by-Step guide:
     
     * ```shell
       nano ~/.bashrc
-  - **Paste the following commands to the `.bashrc` file:**
+  - **Paste the following commands in the end of the `.bashrc` file:**
     
        ``` shell
        export RISCV_PATH="$HOME/proj/binaries/riscv-toolchain"
