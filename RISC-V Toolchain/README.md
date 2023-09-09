@@ -58,7 +58,7 @@ Step-by-Step guide:
   
   ``` shell
   git clone --recursive  https://github.com/riscv/riscv-gnu-toolchain
-**NOTE: You can remove `--recursive` if you have stable internet connection because the recursive approach downloads all submodules of the `Git` and vice versa.**
+**NOTE: You can remove `--recursive` if you have stable internet connection througout the installation process. The recursive approach downloads all submodules of the `Git` and vice versa.**
 
 
 + **For `Ubuntu` dependencies, run the following commands:**
