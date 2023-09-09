@@ -54,7 +54,7 @@ Step-by-Step guide:
   ``` shell
   mkdir -p ~/proj/tools; cd ~/proj; mkdir -p binaries/riscv-toolchain; cd tools;
 
-+ **Clone the official `RISC-V` GitHub repository, this will make the directory `riscv-gnu-toolchain` inside the `tools` directory:**
++ **The following command will clone the official `RISC-V Toolchain` GitHub repository and it will make the directory `riscv-gnu-toolchain` inside the `tools` directory:**
   
   ``` shell
   git clone --recursive  https://github.com/riscv/riscv-gnu-toolchain
