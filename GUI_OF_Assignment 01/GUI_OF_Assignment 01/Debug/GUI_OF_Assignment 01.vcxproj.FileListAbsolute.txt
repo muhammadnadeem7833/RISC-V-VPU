@@ -1,0 +1,8 @@
+C:\Users\Super\source\repos\GUI_OF_Assignment 01\GUI_OF_Assignment 01\Debug\GUI_OF_Assignment 01.vcxproj.AssemblyReference.cache
+C:\Users\Super\source\repos\GUI_OF_Assignment 01\GUI_OF_Assignment 01\Debug\GUIOFAssignment01.MyForm.resources
+C:\Users\Super\source\repos\GUI_OF_Assignment 01\GUI_OF_Assignment 01\Debug\GUI_OF_Assignment 01.vcxproj.GenerateResource.cache
+C:\Users\Super\source\repos\GUI_OF_Assignment 01\GUI_OF_Assignment 01\Debug\GUIOFAssignment01.AddSongsForm.resources
+E:\Study\Semester # 03\Object Oriented Programming\Project\Whole project\GUI_OF_Assignment 01\GUI_OF_Assignment 01\Debug\GUI_OF_Assignment 01.vcxproj.AssemblyReference.cache
+E:\Study\Semester # 03\Object Oriented Programming\Project\Whole project\GUI_OF_Assignment 01\GUI_OF_Assignment 01\Debug\GUIOFAssignment01.AddSongsForm.resources
+E:\Study\Semester # 03\Object Oriented Programming\Project\Whole project\GUI_OF_Assignment 01\GUI_OF_Assignment 01\Debug\GUIOFAssignment01.MyForm.resources
+E:\Study\Semester # 03\Object Oriented Programming\Project\Whole project\GUI_OF_Assignment 01\GUI_OF_Assignment 01\Debug\GUI_OF_Assignment 01.vcxproj.GenerateResource.cache

@@ -1,0 +1,5 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (GUI-OF-Assignment.vcxproj, GUIOFAssignment02.vcxproj, GUI_OF_Assignment 01.vcxproj, GUI_OF_Assignment 02.vcxproj, GUI_OF_Assignment _02.vcxproj, GUI_Of_Assignment-01.vcxproj, GUI_Of_Assignment.vcxproj, GUI_Of_Assignment_01.vcxproj, SE_Project.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  MyForm.cpp
+E:\Study\Semester # 03\Object Oriented Programming\Project\Whole project\GUI_OF_Assignment 01\GUI_OF_Assignment 01\Header.h(212): warning C4715: 'In_Car_AP::GetIndexUSB': not all control paths return a value
+E:\Study\Semester # 03\Object Oriented Programming\Project\Whole project\GUI_OF_Assignment 01\GUI_OF_Assignment 01\Header.h(281): warning C4715: 'In_Car_AP::GetIndexCD': not all control paths return a value
+  GUI_OF_Assignment 01.vcxproj -> E:\Study\Semester # 03\Object Oriented Programming\Project\Whole project\GUI_OF_Assignment 01\Debug\GUIOFAssignment01.exe
